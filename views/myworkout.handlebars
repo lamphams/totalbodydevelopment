@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <title>My Workout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="/css/introHCI.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<ul class="topnav" id="topNav">
+  <li><a class="name" href="/"><img id="logo" src="/img/TBDLogo.png"></a></li>
+  <li class="right"><a href="login"><img src="/img/user.png" width="24"><br>Sign Up/Log In</a></li>
+</ul>
+<nav>
+    <ol class="breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li class="current"><em>My Workout</em></li>
+    </ol>
+  </nav>
+  <div class="objects">
+    <h1>My Workout</h1>
+    
+      <form action="bodyMap">
+        <button class="btn btn-1 btn-1a">  
+          Create NEW Workout
+        </button>
+      </form>
+      <form action="yourlist">
+        <button id="yourlistbtn" class="btn btn-1 btn-1a">  
+          Continue EXISTING
+        </button>
+      </form>
+  </div>
+  <!--
+  <div class="tabBar">
+  <a href="/"><div class="tabItem">
+    <img src="/img/homegray.png">
+    <p><small>Home</small></p>
+  </div></a>
+  <a href=myworkout><div class="tabItem">
+    <img src="/img/weightliftinggray.png">
+    <p><small>My Workout</small></p>
+  </div></a>
+  <a href=dailylog><div class="tabItem">
+    <img src="/img/calendargray.png">
+    <p><small>Daily Log</small></p>
+  </div></a>
+  <a href=favorites><div class="tabItem">
+    <img src="/img/stargray.png">
+    <p><small>Favorites</small></p>
+  </div></a>
+  <a href=notes><div class="tabItem">
+    <img src="/img/notepadgray.png">
+    <p><small>Notes</small></p>
+  </div></a>
+</div>
+-->
+
+<ul class="botnav" id="botNav">
+  <li><a class="active" href="myworkout"><img src="/img/weightliftinggray.png"><br>My Workout</a></li>
+  
+  <li><a href="favorites"><img src="/img/stargray.png"><br>Favorites</a></li>
+  <li><a href="notes"><img src="/img/notepadgray.png"><br>Notes</a></li>
+</ul>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/js/myworkout.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <script>
+  
+</script>
+  </body>
+</html>

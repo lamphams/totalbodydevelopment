@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html>
+<head>
+	<title> Your List </title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/introHCI.css" rel="stylesheet">
+	<!-- this is a comment in HTML -->
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->        
+
+  </head>
+
+  <body>
+  <ul class="topnav" id="topNav">
+  <li><a class="name" href="/"><img id="logo" src="/img/TBDLogo.png"></a></li>
+  <li class="right"><a href="login"><img src="/img/user.png" width="24"><br>Sign Up/Log In</a></li>
+</ul>
+  	<div class="container">
+      <h1> My List </h1>
+
+      <h2>Your Main List</h2>
+
+      {{#if dropdown}}
+      
+      {{#each workout}}
+
+        <div class="drop-element">
+          <span style="font-size:20px; position: relative; left: 0; margin-left: 15px;">{{name}} Workout</span><a style="position: relative; right: 0; margin-right: 10px;" class="dropdownClick" href=#>Arrow</a>
+
+          <div class="drop-box" style="visibility:visible;">
+           
+              <h4>Your Video:</h4> 
+              <iframe style="display: inline-block; width: 200px; height: 200px; margin: 10px auto 10px auto;" src={{video}} frameborder="0" allowfullscreen></iframe></br>
+              {{Description}}
+              <a href={{info}} style="color: #00BCD4;">Learn more and get some fitspiration here!</a>
+          </div>
+          {{/each}}
+        </div>
+      
+      
+      {{else}}
+
+
+      {{#each workout}}
+      <div class="videoContainer" style="text-align:center">
+        <h2>{{name}} {{type}} workout</h2>
+        <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+      </div>
+      {{/each}}
+      {{/if}}
+      <a href="notes"> <h3> Add notes </h3> </a>
+  	</div>
+
+<ul class="botnav" id="botNav">
+  <li><a href="myworkout"><img src="/img/weightliftinggray.png"><br>My Workout</a></li>
+  <li><a class="active" href="dailylog"><img src="/img/calendargray.png"><br>Daily Log</a></li>
+  <li><a href="favorites"><img src="/img/stargray.png"><br>Favorites</a></li>
+  <li><a href="notes"><img src="/img/notepadgray.png"><br>Notes</a></li>
+</ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/public/js/jQuery-rwdImageMaps/jquery.rwdImageMaps.min.js"> </script>
+  	<script src="https://code.jquery.com/jquery.js"></script>
+  	<script src="/public/js/bootstrap.min.js"></script>
+
+    <script>
+    </script>
+  </body>
+  </html>

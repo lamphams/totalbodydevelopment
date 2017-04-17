@@ -1,0 +1,242 @@
+<!doctype html>
+
+<html>
+<head>
+
+	<title> Your List </title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/introHCI.css" rel="stylesheet">
+
+	<!-- this is a comment in HTML -->
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->        
+
+    </head>
+
+    <body>
+      <ul class="topnav" id="topNav">
+        <li><a class="name" href="/"><img id="logo" src="/img/TBDLogo.png"></a></li>
+        <li class="right"><a href="login"><img src="/img/user.png" width="24"><br>Sign Up/Log In</a></li>
+      </ul>
+      <div class="container">
+        <h1> My List </h1>  
+
+        {{#if dropdown}}
+
+        <div class="dropElement">
+          <a href=# style="width: 50%; font-size: 25px; padding: 0px;" class="dropTitle btnd btn-d btn-drop">Ab Workouts</a>
+
+          <div style="display: none;" class="drop-box" >
+            {{#each abs}}
+            <div class=".container">
+            <h4 style="text-align: center">Your Video:</h4>  <a class="delete" href="#" id="{{video}}" data-name="Abs"> ✕ </a>
+            <iframe class ="myVid" style="width: 100%; height: 250px; " src={{video}} frameborder="0" allowfullscreen></iframe></br>
+            </div>
+            {{/each}}
+
+              <!--
+              {{Description}}
+              <a href={{info}} style="color: #00BCD4;">Learn more and get some fitspiration here!</a>-->
+            </div>
+          </div>      
+          <div class="dropElement">
+            <a href=# style="width: 50%; font-size: 25px; padding: 0px;" class="dropTitle btnd btn-d btn-drop">Arm Workouts</a>
+
+            <div style="display: none;" class="drop-box" >
+              {{#each arms}}
+            <div class=".container">
+              <h4 style="text-align: center">Your Video:</h4> <a class="delete" href="#" id="{{video}}" data-name="Arms"> ✕ </a>
+              <iframe class ="myVid" style="width: 100%; height: 250px; " src={{video}} frameborder="0" allowfullscreen></iframe></br>
+              </div>
+              {{/each}}
+
+            </div>
+          </div>      
+          <div class="dropElement">
+            <a href=# style="width: 50%; font-size: 25px; padding: 0px;" class="dropTitle btnd btn-d btn-drop">Chest Workouts</a>
+
+            <div style="display: none;" class="drop-box" >
+              {{#each chest}}
+            <div class=".container">
+              <h4 style="text-align: center">Your Video:</h4> <a class="delete" href="#" id="{{video}}" data-name="Chest"> ✕ </a>
+              <iframe class ="myVid" style="width: 100%; height: 250px; " src={{video}} frameborder="0" allowfullscreen></iframe></br>
+              </div>
+              {{/each}}
+
+              <!--
+              {{Description}}
+              <a href={{info}} style="color: #00BCD4;">Learn more and get some fitspiration here!</a>-->
+            </div>
+          </div>      
+          <div class="dropElement">
+            <a href=# style="width: 50%; font-size: 25px; padding: 0px;" class="dropTitle btnd btn-d btn-drop">Full Body Workouts</a>
+
+            <div style="display: none;" class="drop-box" >
+              {{#each fullbody}}
+            <div class=".container">
+              <h4 style="text-align: center">Your Video:</h4> <a class="delete" href="#" id="{{video}}" data-name="FullBody"> ✕ </a>
+              <iframe class ="myVid" style="width: 100%; height: 250px; " src={{video}} frameborder="0" allowfullscreen></iframe></br>
+              </div>
+              {{/each}}
+
+              <!--
+              {{Description}}
+              <a href={{info}} style="color: #00BCD4;">Learn more and get some fitspiration here!</a>-->
+            </div>
+          </div>      
+          <div class="dropElement">
+            <a href=# style="width: 50%; font-size: 25px; padding: 0px;" class="dropTitle btnd btn-d btn-drop">Leg Workouts</a>
+
+            <div style="display: none;" class="drop-box">
+              {{#each legs}}
+              <div class=".container">
+              <h4 style="text-align: center">Your Video:</h4>  <a class="delete" href="#" id="{{video}}" data-name="Legs"> ✕ </a>
+              <iframe class ="myVid" style="width: 100%; height: 250px;" src={{video}} frameborder="0" allowfullscreen></iframe></br>
+              </div>
+              {{/each}}
+
+              <!--
+              {{Description}}
+              <a href={{info}} style="color: #00BCD4;">Learn more and get some fitspiration here!</a>-->
+            </div>
+          </div>      
+          <div class="dropElement">
+            <a href=# style="width: 50%; font-size: 25px; padding: 0px;" class="dropTitle btnd btn-d btn-drop">Neck Workouts</a>
+
+            <div style="display: none;" class="drop-box" >
+              {{#each neck}}
+              <div class=".container">
+              <h4 style="text-align: center">Your Video:</h4>  <a class="delete" href="#" id="{{video}}" data-name="Neck"> ✕ </a>
+              <iframe class ="myVid" style="width: 100%; height: 250px; " src={{video}} frameborder="0" allowfullscreen></iframe></br>
+              </div>
+              {{/each}}
+
+              <!--
+              {{Description}}
+              <a href={{info}} style="color: #00BCD4;">Learn more and get some fitspiration here!</a>-->
+            </div>
+          </div>      
+          <div class="dropElement">
+            <a href=# style="width: 50%; font-size: 25px; padding: 0px;" class="dropTitle btnd btn-d btn-drop">Shoulder Workouts</a>
+
+            <div style="display: none;" class="drop-box" >
+             {{#each shoulders}}
+             <div class=".container">
+             <h4 style="text-align: center">Your Video:</h4>  <a class="delete" href="#" id="{{video}}" data-name="Shoulders"> ✕ </a>
+             <iframe class ="myVid" style="width: 100%; height: 250px; " src={{video}} frameborder="0" allowfullscreen></iframe></br>
+             </div>
+             {{/each}}
+              <!--
+              {{Description}}
+              <a href={{info}} style="color: #00BCD4;">Learn more and get some fitspiration here!</a>-->
+            </div>
+          </div>      
+
+          {{else}}
+
+
+          {{#each abs}}
+          <div class="videoContainer" style="text-align:center">
+            <h2>Ab Workout</h2>
+            <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+          </div>
+          {{/each}}
+          {{#each arms}}
+          <div class="videoContainer" style="text-align:center">
+            <h2>Arm Workout</h2>
+            <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+          </div>
+          {{/each}}
+          {{#each chest}}
+          <div class="videoContainer" style="text-align:center">
+            <h2>Chest Workout</h2>
+            <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+          </div>
+          {{/each}}
+          {{#each fullbody}}
+          <div class="videoContainer" style="text-align:center">
+            <h2>Full Body Workout</h2>
+            <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+          </div>
+          {{/each}}
+          {{#each legs}}
+          <div class="videoContainer" style="text-align:center">
+            <h2>Leg Workout</h2>
+            <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+          </div>
+          {{/each}}
+          {{#each neck}}
+          <div class="videoContainer" style="text-align:center">
+            <h2>Neck Workout</h2>
+            <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+          </div>
+          {{/each}}
+          {{#each shoulders}}
+          <div class="videoContainer" style="text-align:center">
+            <h2>Shoulder Workout</h2>
+            <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+          </div>
+          {{/each}}
+          {{/if}}
+          <br>
+          <a class="btn btn-1 btn-1e icon-notepad" href="notes"> <h3 style= "text-align: center"> Add notes </h3> </a>
+        </div>
+    <!--
+    <div class="tabBar">
+  <a href="/"> <div class="tabItem">
+    <img src="/img/homegray.png">
+    <p><small>Home</small></p>
+  </div></a>
+  <a href=myworkout><div class="tabItem">
+    <img src="/img/weightliftinggray.png">
+    <p><small>My Workout</small></p>
+  </div></a>
+  <a href=dailylog><div class="tabItem">
+    <img src="/img/calendargray.png">
+    <p><small>Daily Log</small></p>
+  </div></a>
+  <a href=favorites><div class="tabItem">
+    <img src="/img/stargray.png">
+    <p><small>Favorites</small></p>
+  </div></a>
+  <a href=notes><div class="tabItem">
+    <img src="/img/notepadgray.png">
+    <p><small>Notes</small></p>
+  </div></a>
+</div>
+-->
+<ul class="botnav" id="botNav">
+  <li><a class="active" href="myworkout"><img src="/img/weightliftinggray.png"><br>My Workout</a></li>
+  <li><a href="favorites"><img src="/img/stargray.png"><br>Favorites</a></li>
+  <li><a href="notes"><img src="/img/notepadgray.png"><br>Notes</a></li>
+</ul>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+<script src="https://code.jquery.com/jquery.js"></script>
+
+<script src="/js/yourlist.js"></script>
+<script>
+  $(document).ready(function() {
+    console.log("document ready in your list");
+
+  $(".delete").click(function(e) {
+    console.log("delete clicked in your list");
+    e.preventDefault();
+    var workoutType = $(this).attr("data-name");
+    console.log("removing workout");
+    $.get('removeWorkout?id=' + this.id + '&name=' + workoutType);
+    $(this).closest('div').remove();
+  });
+  });
+
+</script>
+
+</body>
+</html>

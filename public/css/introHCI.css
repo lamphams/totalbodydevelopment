@@ -1,0 +1,655 @@
+@import url(//fonts.googleapis.com/css?family=Work+Sans);
+body {
+    background-image: url("/img/TBD-GrayBack.png");
+    font-family: Work Sans;
+    padding-bottom: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-family: inherit;
+    margin: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #282C33;
+}
+
+#logo {
+    width: 100px;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 18px;
+    font-size: 10px;
+}
+
+ul.topnav li.right {
+    float: right;
+    margin-top: 9px;
+}
+
+.test {
+    color: #000;
+    font-size: 15px;
+    position: relative;
+    top: -1px;
+    left: 10px;
+}
+
+.test:hover {
+    color: #000;
+}
+
+.test:active {
+    position: relative;
+    top: 1px;
+}
+
+.btn {
+    width: 500px;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: block;
+    margin: 25px auto;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    outline: none;
+    position: relative;
+    border-radius: 0px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btnd{
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 80px 80px;
+    display: block;
+    margin: 15px auto;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-1 {
+    background: #00BCD4;
+    color: #fff;
+}
+
+.btn-1:hover {
+    background: #26C6DA;
+    color: #fff;
+}
+
+.btn-1:active {
+    background: #00ACC1;
+    top: 2px;
+    color: #fff;
+}
+
+.btn-1:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+}
+
+.btn-1e {
+    padding: 25px 120px 25px 60px;
+    overflow: hidden;
+}
+
+.btn-1e:before {
+    left: auto;
+    right: 10px;
+    z-index: 2;
+}
+
+.btn-1e:after {
+    width: 30%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    right: 0;
+    top: 0;
+    margin: -5px 0 0 -5px;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform-origin: 0 0;
+    -moz-transform: rotate(-20deg);
+    -ms-transform-origin: 0 0;
+    -ms-transform: rotate(-20deg);
+    transform-origin: 0 0;
+    transform: rotate(-20deg);
+}
+
+.btn-1e:hover:after {
+    width: 40%;
+}
+
+.icon-weight:before {
+    content: url(/img/weightlifting.png);
+}
+
+.icon-star:before {
+    content: url(/img/star.png);
+}
+
+.icon-notepad:before {
+    content: url(/img/notepad.png);
+}
+
+.icon-home:before {
+    content: url(/img/home.png);
+}
+
+
+#handle {
+    position: absolute;
+    margin: 10px 10px 10px 0;
+    top: 0;
+    right: 0;
+}
+
+#login {
+    position: absolute;
+    margin: 10px 10px 10px 10px;
+    top: 0;
+    left: 0;
+}
+
+.mainOption {
+    width: 500px;
+    padding: 20px 40px;
+    margin: 25px auto;
+    box-shadow: 1px 2px 3px gray;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 3px;
+    display: block;
+}
+
+.mainOption img {
+    margin-left: 25px;
+}
+
+.secPage {
+    padding: 35px 10px;
+}
+
+#objects {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+}
+
+.mainOption:hover {
+    box-shadow: 2px 2px 7px gray;
+    font-style: bold;
+}
+
+#homeElem {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 0px solid gray;
+    border-radius: 50%;
+    background-color: #00BCD4;
+    margin: 0 0 30px 30px;
+    text-align: center;
+}
+
+#homeElem img {
+    margin-top: 5px;
+}
+
+
+.bodyMap {
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    margin-left: 25%;
+    padding-bottom: 20px;
+}
+
+.workoutOptions {
+    margin-left: 0;
+    margin-top: 70px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    -webkit-align-items: flex-start;
+    position: relative;
+}
+
+.workoutLeft {
+    left: 60px;
+}
+
+.workoutRight {
+    align-self: flex-end;
+    right: 90px;
+}
+
+.workoutOptions li {
+    border-radius: 4px 4px 4px 4px;
+    padding: 5px 7px;
+    width: 80px;
+    background: #00BCD4;
+    display: inline;
+    border: solid #e0faff 1px;
+    margin-top: 20px;
+    margin-left: 0;
+    position: relative;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.workoutLeft:hover {
+    background: #26C6DA;
+    margin-left: 8px;
+}
+
+.workoutRight:hover {
+    background: #26C6DA;
+    margin-right: 8px;
+}
+
+.workoutOptions li:active {
+    background: #00ACC1;
+    top: 2px;
+}
+
+.workoutOptions li a {
+    font-family: inherit;
+    font-size: 12px;
+    color: white;
+}
+
+.fullBod a {
+    font-size: 16px;
+    font-weight: bold;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+}
+
+.tabBar {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+    -webkit-align-items: left;
+    position: fixed;
+    bottom: 0;
+    padding: 3px 15px 3px 7px;
+    background-color: #e3eff0;
+    box-shadow: 2px 2px 4px #eee;
+    border-top: solid #a6a6a6 1px;
+}
+
+.tabBar a {
+    margin: 0;
+    padding: 5px 4px 3px 0px;
+    display: inline-block;
+    text-decoration: none;
+    color: #26C6DA;
+}
+
+.tabItem {
+    text-align: center;
+    width: 90px;
+    padding: 0 5px 0 5px;
+    font-size: 12px;
+}
+
+.tabItem:hover {
+    background: #eee;
+}
+
+.tabBar img {
+    width: 20px;
+}
+
+.botnav {
+    list-style: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+ul.botnav li {
+    display: inline-block;
+    margin: auto;
+}
+
+ul.botnav li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 10px;
+    margin: auto;
+}
+
+ul.botnav li a:hover {
+    background-color: #00BCD4;
+    color: #fff;
+}
+
+ul.botnav img {
+    width: 10px;
+}
+
+ul.botnav li a.active {
+    background-color: #00BCD4;
+    color: #fff;
+}
+
+
+/* Calendar code inspiration found on w3Schools. */
+
+.calendar {
+    box-shadow: 2px 2px 6px #666
+}
+.month {
+    padding: 40px 25px;
+    width: 100%;
+    background: #26C6DA;
+}
+
+
+/* Month list */
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+/* Weekdays (Mon-Sun) */
+
+.weekdays {
+    margin: 0;
+    padding: 20px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 12%;
+    color: #666;
+    text-align: center;
+}
+
+
+/* Days (1-31) */
+
+.days {
+    padding: 15px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 12%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #777;
+}
+
+
+/* Highlight the "current" day */
+
+.days li .active {
+    padding: 5px;
+    background: #26C6DA;
+    color: white !important
+}
+
+.videoContainer {
+    margin: 20px auto;
+}
+
+@media (max-width: 550px) {
+    .btn {
+        width: 350px;
+    }
+    .bodyMap {
+        height: 450px;
+        width: 200px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .workoutLeft {
+        left: -18px;
+        margin-top: 5px;
+    }
+    .workoutRight {
+        right: -5px;
+    }
+    .workoutOptions li {
+        margin-top: 10px;
+        width: 75px;
+    }
+    .videoContainer iframe {
+        width: 375px;
+    }
+}
+
+@media (max-width: 349px) {
+    .btn {
+        width: 300px;
+    }
+    .bodyMap {
+        height: 350px;
+        width: 150px;
+    }
+}
+
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-d {
+    background: #26C6DA;
+    color: #fff;
+    box-shadow: 0 6px #00BCD4;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+
+.btn-drop {
+    border-radius: 0 0 5px 5px;
+}
+
+.btn-drop:hover {
+    box-shadow: 0 4px #00BCD4;
+    color: #fff;
+    top: 2px;
+}
+
+.btn-drop:active {
+    box-shadow: 0 0 #00BCD4;
+    top: 6px;
+}
+
+.drop-box {
+    position: relative;
+    display: block;
+    margin: 0px auto;
+}
+
+
+.dropTitle{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}
+
+.exit {
+    color: red;
+    position: relative; 
+    top: -300px;
+    font-size: 20px;
+}
+.exit:hover {
+    color: red;
+}
+
+.breadcrumb, .multi-steps {
+  width: 90%;
+  max-width: 768px;
+  padding: 0.5em 1em;
+  margin: 1em auto;
+  background-color: #edeff0;
+  border-radius: .25em;
+}
+.breadcrumb::after, .multi-steps::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.breadcrumb li, .multi-steps li {
+  display: inline-block;
+  float: left;
+  margin: 0.5em 0;
+}
+.breadcrumb li::after, .multi-steps li::after {
+  /* this is the separator between items */
+  display: inline-block;
+  margin: 0 .6em;
+  color: #959fa5;
+}
+.breadcrumb li:last-of-type::after, .multi-steps li:last-of-type::after {
+  /* hide separator after the last item */
+  display: none;
+}
+.breadcrumb li > *, .multi-steps li > * {
+  /* single step */
+  display: inline-block;
+  font-size: 1.4rem;
+  color: #2c3f4c;
+}
+.breadcrumb li.current > *, .multi-steps li.current > * {
+  /* selected step */
+  color: #00BCD4;
+}
+.no-touch .breadcrumb a:hover, .no-touch .multi-steps a:hover {
+  /* steps already visited */
+  color: #00BCD4;
+}
+.addWork{
+    color: #000;
+    font-size: 30px;
+    position: relative;
+    top: 3px;
+}
+
+.addWork:hover {
+    color: #000;
+}
+
+.addWork:active {
+  position: relative;
+  top: 1px;
+}

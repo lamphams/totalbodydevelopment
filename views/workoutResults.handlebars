@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+
+  <title> List of Videos for your workout</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/introHCI.css" rel="stylesheet">
+  <!-- this is a comment in HTML -->
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <ul class="topnav" id="topNav">
+      <li><a class="name" href="/"><img id="logo" src="/img/TBDLogo.png"></a></li>
+      <li class="right"><a href="login"><img src=/img/user.png" width="24"></a></li>
+    </ul>
+    <nav>
+    <ol class="breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li><a href="myworkout">My Workout</a></li>
+      <li><a href="bodyMap">Body Map</a></li>
+      <li class="current"><em>{{type}} Workout Results</em></li>
+    </ol>
+    </nav>
+    <div class="container">
+
+
+      <h1> {{type}} Workout Results </h1>
+      <a class="btn btn-1 btn-1e icon-weight" href="yourlist"> To Your List </a>
+      {{#each workout}}
+      <div class="videoContainer" style="text-align:center">
+        <h2> {{name}} </h2>
+        <iframe width="560" height="315" src={{video}} frameborder="0" allowfullscreen></iframe>
+        <br>
+        <a class="addWork" name="{{name}}" data-video="{{video}}" href="#">+</a>
+        <a class="test" href="#" id="{{video}}">★</a>
+        <p> </p>
+      </div>
+      {{/each}}   
+
+  </div>
+  <ul class="botnav" id="botNav">
+    <li><a class="active" href="myworkout"><img src="/img/weightliftinggray.png"><br>My Workout</a></li>
+    
+    <li><a href="favorites"><img src="/img/stargray.png"><br>Favorites</a></li>
+    <li><a href="notes"><img src="/img/notepadgray.png"><br>Notes</a></li>
+  </ul>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script>
+    $(document).ready(function() {
+      //Will color in favorites if needed
+    $.get('favoriteReturn', function(data) {
+        console.log("current data returned in get fun is:" + JSON.stringify(data));
+        for(var i = 0; i < data.favorites.length; i++) {
+          $('.test').each(function() {
+            console.log("curr id found: " + this.id);
+            console.log("checking with: " + data.favorites[i]["video"]);
+            if(this.id == data.favorites[i]["video"]) {
+              console.log("setting video with id: " + this.id + " to yellow");
+              $(this).css("color", "yellow");
+            }
+          });
+        }
+    });
+
+    //Will set the + and -
+    $.get('listReturn', function(data) {
+        console.log("current data returned in get fun is:" + JSON.stringify(data));
+        var name = $('.addWork').attr("name");
+        console.log("name is recorded as:" + name);
+        console.log("length of workouts is:" + data.workouts[name].length);
+        for(var i = 0; i < data.workouts[name].length; i++) {
+          $('.addWork').each(function() {
+            var video = $(this).attr("data-video");
+            console.log("checking with: " + data.workouts[name][i]["video"]);
+            console.log("if it matches: " + video);
+            if(video == data.workouts[name][i]["video"]) {
+              console.log("setting video to - since added already");
+              $(this).css("color", "red");
+              $(this).text("-");
+            }
+          });
+        }
+    });
+
+    //will toggle and add to list
+    //href=addWorkoutToList?id={{video}}&name={{name}}
+    $(".addWork").click(function(e) {
+      e.preventDefault();
+      var video = $(this).attr("data-video");
+      console.log("name is shown as:" + this.name);
+      console.log("video is shown as:" + video);
+      var color = $(this).css("color");
+
+      //then change the symbol
+      //add it if + add
+      if(color == "rgb(0, 0, 0)") {
+        console.log("found it was black then add video");
+        $.get('addWorkoutToList?id=' + video + '&name=' + this.name);
+        //change the css to a '-' symbol
+        $(this).css("color", "red");
+        $(this).text("-");
+      }
+      //else it's red - and must be removed
+      else {
+        console.log("found it was red now remove video");
+        console.log("trying to remove:" + video);
+        $.get('removeWorkout?id=' + video + '&name=' + this.name);
+        //change the css to a '+' symbol
+        $(this).css("color", "black");
+        $(this).text("+");
+
+      }
+    });
+
+    //will toggle colors and add to favorite list
+      $(".test").click(function(e) {
+        e.preventDefault();
+        console.log("test");
+        console.log(this.id);
+        var currColor = $(this).css("color");
+        console.log(currColor);
+        if(currColor == "rgb(0, 0, 0)") {
+          $(this).css("color", "yellow");
+          console.log("added video");
+          $.get('addFavorite?id=' + this.id);
+        }
+        else {
+          $(this).css("color", "black");
+          console.log("trying to remove video");
+          $.get('removeFavorite?id=' + this.id);
+        }
+      });
+
+    });
+  </script>
+  <script>
+  
+</script>
+</body>
+</html>

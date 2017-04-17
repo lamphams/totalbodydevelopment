@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+  
+    <title>Body Map</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/introHCI.css" rel="stylesheet">
+    <!-- this is a comment in HTML -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body >
+    <ul class="topnav" id="topNav">
+      <li><a class="name" href="/"><img id="logo" src="/img/TBDLogo.png"></a></li>
+      <li class="right"><a href="login"><img src="/img/user.png" width="24"><br>Sign Up/Log In</a></li>
+    </ul>
+    <nav>
+    <ol class="breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li><a href="myworkout">My Workout</a></li>
+      <li class="current"><em>Body Map</em></li>
+    </ol>
+    </nav>
+    <div class="container">
+      <h1> {{title}} {{day}} </h1>
+      <img class='bodyMap' src="img/bodyMap.png"/>
+      <ol class="workoutOptions">
+        <li class="workoutLeft" >
+          <a href=workoutResults?id=Neck> Neck </a>
+        </li>
+        <li class="workoutRight">
+          <a href=workoutResults?id=Shoulders> Shoulders </a>
+        </li>
+        <li class="workoutLeft" >
+          <a  href=workoutResults?id=Chest> Chest </a>
+        </li>
+        <li class="workoutRight" >
+          <a href=workoutResults?id=Abs> Abs </a>
+        </li>
+        <li class="workoutLeft">
+          <a href=workoutResults?id=Arms> Arms </a>
+        </li>
+        <li class="workoutRight" >
+          <a href=workoutResults?id=Legs> Legs </a>
+        </li>
+        <li class="workoutLeft fullBod">
+          <a href=workoutResults?id=FullBody> Full Body </a>
+        </li>
+      </ol>
+    </div>
+    <ul class="botnav" id="botNav">
+      <li><a class="active" href="myworkout"><img src="/img/weightliftinggray.png"><br>My Workout</a></li>
+      
+      <li><a href="favorites"><img src="/img/stargray.png"><br>Favorites</a></li>
+      <li><a href="notes"><img src="/img/notepadgray.png"><br>Notes</a></li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script>
+    </script>
+    <script>
+  
+
+</script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+{
+	"workouts": {
+			"Neck": [
+			{
+				"name": "Neck",
+				"video": "https://www.youtube.com/embed/mVYB9yps4ow",
+				"Description": "The neck is often overlooked in terms of importance of working out, though, as I'm sure you could have guessed, it is a vital muscle used in our everyday life! Read more!",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			},
+			{
+				"name": "Neck",
+				"video": "https://www.youtube.com/embed/r53k_Z2sydI",
+				"Description": "The neck is often overlooked in terms of importance of working out, though, as I'm sure you could have guessed, it is a vital muscle used in our everyday life! Read more!",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			},
+			{
+				"name": "Neck",
+				"video": "https://www.youtube.com/embed/YPiqpLtQbvc"	,
+				"Description": "The neck is often overlooked in terms of importance of working out, though, as I'm sure you could have guessed, it is a vital muscle used in our everyday life! Read more!",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			}
+			],
+			"Chest": [
+			{
+				"name": "Chest",
+				"video": "https://www.youtube.com/embed/DUVv_feH7z0",
+				"Description": "Introductory chest workouts are useful, read more to gain some inspiration!",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			},
+			{ 	
+				"name": "Chest",
+				"video": "https://www.youtube.com/embed/IPvVRFcGIBs",
+				"Description": "Introductory chest workouts are useful, read more to gain some inspiration!",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			},
+			{ 	
+				"name": "Chest",
+				"video": "https://www.youtube.com/embed/2uJqvaXAexc",
+				"Description": "Introductory chest workouts are useful, read more to gain some inspiration!",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			}
+			],
+			"Arms": [
+			{
+				"name": "Arms",
+				"video": "https://www.youtube.com/embed/cF0niVnmMY0",
+				"Description": "Whether you are a male or female, arm workouts should not be overlooked. Test your limits with some of our workouts.",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			},
+			{ 	
+				"name": "Arms",
+				"video": "https://www.youtube.com/embed/zU9ig8oaU6E",
+				"Description": "Whether you are a male or female, arm workouts should not be overlooked. Test your limits with some of our workouts.",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			},
+			{ 	
+				"name": "Arms",
+				"video": "https://www.youtube.com/embed/hAGfBjvIRFI",
+				"Description": "Whether you are a male or female, arm workouts should not be overlooked. Test your limits with some of our workouts.",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			}
+			],
+			"FullBody": [
+			{ 	
+				"name": "fullBody",
+				"video": "https://www.youtube.com/embed/695PN9xaEhs",
+				"Description": "",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			},
+			{ 	
+				"name": "fullBody",
+				"video": "https://www.youtube.com/embed/XIeCMhNWFQQ",
+				"Description": "",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			},
+			{ 	
+				"name": "fullBody",
+				"video": "https://www.youtube.com/embed/zd8pDgK-HhQ",
+				"Description": "",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			}
+			],
+			"Shoulders": [
+			{ 	
+				"name": "Shoulders",
+				"video": "https://www.youtube.com/embed/Ut09ow5T26Q",
+				"Description": "",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			},
+			{ 	
+				"name": "Shoulders",
+				"video": "https://www.youtube.com/embed/6EqI5V8AUp8",
+				"Description": "",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			},
+			{ 	
+				"name": "Shoulders",
+				"video": "https://www.youtube.com/embed/yUgFJHp4faA",
+				"Description": "",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			}
+			],
+			"Abs": [
+			{ 	
+				"name": "Abs",
+				"video": "https://www.youtube.com/embed/1919eTCoESo",
+				"Description": "",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			},
+			{ 	
+				"name": "Abs",
+				"video": "https://www.youtube.com/embed/1919eTCoESo",
+				"Description": "",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			},
+			{ 	
+				"name": "Abs",
+				"video": "https://www.youtube.com/embed/1919eTCoESo",
+				"Description": "",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			}
+			],
+			"Legs": [
+			{ 	
+				"name": "Legs",
+				"video": "https://www.youtube.com/embed/yGk0_dzpFA0",
+				"Description": "",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			},
+			{ 	
+				"name": "Legs",
+				"video": "https://www.youtube.com/embed/yGk0_dzpFA0",
+				"Description": "",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			},
+			{ 	
+				"name": "Legs",
+				"video": "https://www.youtube.com/embed/yGk0_dzpFA0",
+				"Description": "",
+				"info": "http://www.muscleandfitness.com/workouts/workout-tips/neck-training-101"
+			}
+			]
+		}
+}

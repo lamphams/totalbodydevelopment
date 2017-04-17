@@ -1,0 +1,85 @@
+{
+	"days": 
+	[
+		{
+			"id": 19,
+			"day": "Friday",
+			"Month": "February",
+			"Workouts": {
+			}
+		},
+		{
+			"id": 20,
+			"day": "Saturday",
+			"Month": "February",
+			"Workouts": {
+				
+			}
+		},
+		{
+			"id": 21,
+			"day": "Sunday",
+			"Month": "February",
+			"Workouts": {
+				
+			}
+		},
+		{
+			"id": 22,
+			"day": "Monday",
+			"Month": "February",
+			"Workouts": {
+				
+			}
+		},
+		{
+			"id": 23,
+			"day": "Tuesday",
+			"Month": "February",
+			"Workouts": {
+				
+			}
+		},
+		{
+			"id": 24,
+			"day": "Wednesday",
+			"Month": "February",
+			"Workouts": {
+				
+			}
+		},
+		{
+			"id": 25,
+			"day": "Thursday",
+			"Month": "February",
+			"Workouts": {
+				
+			}
+		},
+		{
+			"id": 26,
+			"day": "Friday",
+			"Month": "February",
+			"Workouts": {
+				
+			}
+		},
+		{
+			"id": 27,
+			"day": "Saturday",
+			"Month": "February",
+			"Workouts": {
+				
+			}
+		},
+		{
+			"id": 28,
+			"day": "Sunday",
+			"Month": "February",
+			"Workouts": {
+				
+			}
+		},
+
+	]
+}
